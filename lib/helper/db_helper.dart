@@ -20,4 +20,10 @@ class DBHelper {
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
   }
+
+  static Future<List<Map<String, dynamic>>> getData(String table) async {
+    final db = await DBHelper.database();
+    var res = await db.rawQuery("SELECT * FROM $table");
+    return res.toList();
+  }
 }
