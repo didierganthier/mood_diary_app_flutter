@@ -26,4 +26,9 @@ class DBHelper {
     var res = await db.rawQuery("SELECT * FROM $table");
     return res.toList();
   }
+
+  static Future<void> delete(String datetime) async {
+    final db = await DBHelper.database();
+    await db.rawDelete("DELETE FROM user_moods WHERE datetime = ?", [datetime]);
+  }
 }

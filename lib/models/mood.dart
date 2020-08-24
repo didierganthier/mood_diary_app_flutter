@@ -6,4 +6,4 @@ class Mood {
   Mood({this.name, this.moodImage, this.isSelected});
 }
 
-//{}
+//{} []
