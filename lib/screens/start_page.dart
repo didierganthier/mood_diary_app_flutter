@@ -28,10 +28,6 @@ class _StartPageState extends State<StartPage> {
     Mood(moodImage: 'assets/bored.png', name: 'Bored', isSelected: false),
     Mood(moodImage: 'assets/angry.png', name: 'Angry', isSelected: false),
     Mood(moodImage: 'assets/friendly.png', name: 'Friendly', isSelected: false),
-    Mood(
-        moodImage: 'assets/surprised.png',
-        name: 'Surprised',
-        isSelected: false),
     Mood(moodImage: 'assets/wink.png', name: 'Cool', isSelected: false),
     Mood(moodImage: 'assets/loving.png', name: 'Loving', isSelected: false),
     Mood(moodImage: 'assets/scared.png', name: 'Scared', isSelected: false),
@@ -92,7 +88,7 @@ class _StartPageState extends State<StartPage> {
             Row(
               children: [
                 SizedBox(
-                  width: 70,
+                  width: 40,
                 ),
                 FlatButton.icon(
                   icon: Icon(Icons.date_range),
@@ -254,6 +250,7 @@ class _StartPageState extends State<StartPage> {
                     dateOnly,
                   );
                 });
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>HomePage()));
               },
               icon: Icon(Icons.send),
               label: Text(
