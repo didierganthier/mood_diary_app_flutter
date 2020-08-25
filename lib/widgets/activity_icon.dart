@@ -5,7 +5,7 @@ class ActivityIcon extends StatelessWidget {
   final String name;
   final Color color;
 
-  ActivityIcon({this.image, this.name, this.color});
+  ActivityIcon(this.image, this.name, this.color);
 
   @override
   Widget build(BuildContext context) {
