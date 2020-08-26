@@ -69,7 +69,7 @@ class _HomePageState extends State<HomePage> {
                       snapshot.data[position]['mood'] == 'High'? charts.ColorUtil.fromDartColor(Colors.purple) :
                       snapshot.data[position]['mood'] == 'Loving'? charts.ColorUtil.fromDartColor(Colors.pink) :
                       snapshot.data[position]['mood'] == 'Scared'? charts.ColorUtil.fromDartColor(Colors.black) :
-                      10,
+                      charts.ColorUtil.fromDartColor(Colors.cyan),
                   )
               );
               return MoodDay(snapshot.data[position]['image'], snapshot.data[position]['datetime'], snapshot.data[position]['mood'], img, name);
