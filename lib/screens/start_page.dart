@@ -45,7 +45,7 @@ class _StartPageState extends State<StartPage> {
     Activity('assets/games.png', 'Gaming', false),
     Activity('assets/friends.png', 'Friends', false),
     Activity('assets/family.png', 'Family', false),
-    Activity('assets/gym.png', 'Excercise', false),
+    Activity('assets/gym.png', 'Exercise', false),
     Activity('assets/eat.png', 'Eat', false),
     Activity('assets/heart.png', 'Date', false),
     Activity('assets/clean.png', 'Clean', false),
